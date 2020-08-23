@@ -16,27 +16,13 @@ module.exports = {
     },
     sourceType: 'module',
   },
-  plugins : [/* 'flowtype' */, 'react'],
+  plugins : [/* 'flowtype' */ 'react'],
   rules   : {
+
+    'template-curly-spacing'            : 'off',
     camelcase                           : 0,
     'comma-dangle'                      : ['error', 'always-multiline'],
     eqeqeq                              : ['error', 'smart'],
-    /*
-    'flowtype/no-weak-types': [2, {
-      'any': false,
-      'Function': false,
-      'Object': false
-    }],
-    'flowtype/require-parameter-type': [2, {
-      'excludeArrowFunctions': true
-    }],
-    'flowtype/require-valid-file-annotation': [2, 'always', {
-      'annotationStyle': 'block'
-    }],
-    'flowtype/require-variable-type': [2, {
-      'excludeVariableMatch': '^[A-Z_].*'
-    }],
-    */
     'import/no-extraneous-dependencies' : 0,
     indent                              : ['error', 2, {
       SwitchCase         : 1,
