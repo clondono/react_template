@@ -29,20 +29,13 @@ module.exports = {
         exclude : /node_modules/,
         use     : [
           {
-
-            options: {
-              formatter   : eslintFormatter,
-              eslintPath  : require.resolve('eslint'),
-              emitWarning : true,
-            },
-            loader: require.resolve('eslint-loader'),
-            // loader : 'babel-loader',
-            //     options: {
-            //     formatter   : eslintFormatter,
-            //     eslintPath  : require.resolve('eslint'),
-            //     emitWarning : true,
-            //     },
-            //     loader: require.resolve('eslint-loader'),
+            // options: {
+            //   formatter   : eslintFormatter,
+            //   eslintPath  : require.resolve('eslint'),
+            //   emitWarning : true,
+            // },
+            // loader: require.resolve('eslint-loader'),
+            loader: 'babel-loader',
           },
         ],
       },
